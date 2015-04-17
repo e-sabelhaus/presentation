@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>STEM</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Eric Sabelhaus">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -50,23 +50,16 @@
 				<section data-markdown>
 					<script type="text/template">
 						## What is Rest?
-						* REST is a common standard in which web Application Programming Interfaces(API)
-						and web User Interfaces(UI) are designed
-						* REST allows developers to build their API and UI in such a way, so that it may
-						lend itself to rapid development and scalability
+						* REST is a common standard in which web Application Programming Interfaces(API) and web User Interfaces(UI) are designed
+						* REST allows developers to build their API and UI in such a way, so that it may lend itself to rapid development and scalability
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## Rapid Development?? Scalability??
-						* Rapid development allows you to spend more time designing new
-							features, as well as deploying those new feature
-						* In software, deployment is the act of placing your finished product on a server or
-							virtual machine where the application is destined to be run and
-							accessed by end users
-						* Scalability simply means you can enable few or many users, or in some cases other applications,
-							to access your application. It can `scale` up or down as needed
+						## Rapid Development and Scalability
+						* Rapid development allows you to spend more time designing new features, as well as deploying those new features
+						* Scalability simply means you can enable few or many users, or in some cases other applications, to access your application. It can `scale` up or down as needed
 					</script>
 				</section>
 
@@ -74,8 +67,7 @@
 					<section data-markdown>
 						<script type="text/template">
 							## How does rest do all this?
-							* The main concept of `REST` is to design your application to use what are known as
-								standard HTTP methods.
+							* The main concept of `REST` is to design your application to use what are known as standard HTTP methods.
 							 * A Method is a piece of software which performs a specified function
 							* The methods most commonly used in `REST` are
 							 * GET
@@ -86,24 +78,20 @@
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## By following standard practices, we alleviate confusion
-							* HTTP, or Hypertext Transfer Protocol, is a protocol by which servers and browers
-								talk to one another.
-							* It is used as a backbone to the place that we call the internet today
-							* It has been refined to enable performance based on the methods used for communication
-							* When designing an API or UI, by following RESTful practices, you set yourself
-								up for success by defining what are known as routes using the proper HTTP method
+							## By following standard practices, REST alleviates confusion
+							* HTTP, or Hypertext Transfer Protocol, is a protocol which enables servers and browers transfer digital communications.
+							* REST is the practice of designing the routes of your API or UI in a way that represents what action you intend to perform using HTTP
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## Routes??
-							* If you have ever browsed to a website, you have used a route.
-							* The most common route is `/`, more commonly refered to as slash
-							* Think of http://www.facebook.com/ that trailing slash is a route.
-							* A route is also referred to as a URL, or URI. It is the way that your browser knows how to submit
-								a request to a server via HTTP.
-							* A request is defined via the HTTP method which is used.
+							* The most common route is `/`
+							* Think of `http://www.facebook.com/` that trailing slash is a route.
+							* A route is part of URL, or URI. It is the way that your browser knows how to submit a request to a server via HTTP.
+							* The first part, www.facebook.com, is the domain name of the server
+							* The second part, the `/`, tells your browser to GET the content provided at the base route of the server.
+							* A request is defined via the HTTP method which is used, in this case GET.
 						</script>
 					</section>
 					<section data-markdown>
@@ -111,8 +99,8 @@
 							## Requests
 							* The HTTP methods referred to earlier are more commonly know as _CRUD_ methods
 							* It stands for Create, Read, Update, Delete
-							* Think of a request, as if you are asking the web site you are browsing to, to perform some action
-							* That action, when defined properly, should have a specific outcome.
+							* Think of a request like asking the server to perform some action
+							* That action, when defined properly, should have a specific outcome
 						</script>
 					</section>
 					<section data-markdown>
@@ -123,10 +111,6 @@
 							* Update - or PUT, should modify an existing piece of content on the server
 							* Delete - should remove content from the server
 							* These define specific routes, to perform actions on a server
-							* By following a standard practice, it allows for consistency and clarity when designing
-								an application.
-							* By following RESTful design practices, it makes it so that the browser knows exactly how perform every
-								task as they were intended.
 						</script>
 					</section>
 					<section data-markdown>
@@ -136,19 +120,16 @@
 							* When you scroll through your news feed, that is a GET request
 							* When you edit your profile, that is a PUT request
 							* When you delete a picture or post, that is a DELETE request
-							* We define these routes in web applications to perform tasks which are necessary to curate the content
-								available on that application
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## Rapid Development and Scalability??
-							* The other benefit of properly defined REST routes, is that it enables your application to perform Inter-server Communication
+							## back to Rapid Development and Scalability
+							* HTTP enables an application to perform Inter-server Communication
 							* Think of this, like when you authorize an app on your phone to connect with your Facebook or Twitter account.
-							* That application knows how to talk to Twitter and Facebook via a common public api to perform numerous tasks
-								on your behalf
-							* If you can rely on a separate server for authentication, profile management, content curation, etc. You merely have to leverage
-							that, and define your application, and you have now deployed an application with that functionality as well as your own
+							* That application knows how to talk to Twitter and Facebook via a common public REST api to perform numerous tasks on your behalf
+							* If an application can rely on a separate server for authentication, profile management, content curation, etc. You merely have to leverage that as part of its design
+							* This cuts down the time from inception to deployable code drastically!
 						</script>
 					</section>
 				</section>
@@ -156,20 +137,20 @@
 					<script type="text/template">
 						## Consuming RESTful APIs
 						* Rest is most commonly used to design APIs
-						* An API is not like a User Interface, but rather is designed
-							to provide raw content from a provider
+						* An API is not like a User Interface, but rather is designed to provide raw content from a provider
 						* A few very popular APIs are
-						 * Twitter - https://stream.twitter.com/1.1/statuses/sample.json
-						 * Facebook - http://graph.facebook.com/
-						 * Google - WAAAAAAY too many APIs to cover here
+						 * Twitter Stream - https://stream.twitter.com/1.1/statuses/sample.json
+						 * Facebook Graph - http://graph.facebook.com/
+						 * Google Maps - https://www.google.com/maps/embed/v1/place
 					</script>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						An example of a GET request to the Twitter API using NodeJS would look like
-						For simplicity sake, I use the twitter NPM module to perform the request
-						```
+				<section>
+					<ul>
+						<li>This is how a GET request to the Twitter Statuses API using NodeJS would look
+						<li>For simplicity sake, I use the twitter Node Package Manager (NPM) module to perform the request.
+					<ul>
+					<pre><code data-trim contenteditable>
 var Twitter = require('twitter');
 
 var client = new Twitter({
@@ -180,13 +161,13 @@ var client = new Twitter({
 });
 
 var params = {screen_name: 'ESabelhaus'};
+
 client.get('statuses/user_timeline', params, function(error, tweets, response){
 	if (!error) {
 		console.log(tweets);
 	}
 });
-						```
-					</script>
+					</pre></code>
 				</section>
 
 				<section data-markdown>
@@ -211,7 +192,9 @@ client.get('statuses/user_timeline', params, function(error, tweets, response){
 				<section data-markdown>
 					<script type="text/template">
 						## The JSON response of a tweet
-						{ created_at: 'Thu Mar 19 01:31:34 +0000 2015',
+						```
+						{
+							created_at: 'Thu Mar 19 01:31:34 +0000 2015',
 							id: 578368181884059600,
 							id_str: '578368181884059648',
 							text: 'If you are into Open Source Software, check out this new Stackexchange in Area51! http://t.co/qMP67Q7pzS',
@@ -233,37 +216,29 @@ client.get('statuses/user_timeline', params, function(error, tweets, response){
 							favorited: false,
 							retweeted: false,
 							possibly_sensitive: false,
-							lang: 'en' }
+							lang: 'en'
+						}
+						```
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## Providing a RESTful API
-
+						#Questions???
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-
+						# And now for actual code &#128516;
+						https://github.com/e-sabelhaus/prestige
 					</script>
 				</section>
 			</div>
-
 		</div>
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
-
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -271,8 +246,7 @@ client.get('statuses/user_timeline', params, function(error, tweets, response){
 				progress: true,
 				history: true,
 				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
