@@ -50,16 +50,16 @@
 				<section data-markdown>
 					<script type="text/template">
 						## What is Rest?
-						###REST is a common standard in which web Application Programming Interfaces(API) and web User Interfaces(UI) are designed
-						###REST allows developers to build their API and UI in such a way, so that it may lend itself to rapid development and scalability
+						* REST is a common standard in which web Application Programming Interfaces(API) and web User Interfaces(UI) are designed
+						* REST allows developers to build their API and UI in such a way, so that it may lend itself to rapid development and scalability
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Rapid Development and Scalability
-						###Rapid development allows you to spend more time designing new features, as well as deploying those new features
-						###Scalability simply means you can enable few or many users, or in some cases other applications, to access your application. It can `scale` up or down as needed
+						* Rapid development allows you to spend more time designing new features, as well as deploying those new features
+						* Scalability simply means you can enable few or many users, or in some cases other applications, to access your application. It can `scale` up or down as needed
 					</script>
 				</section>
 
@@ -67,9 +67,9 @@
 					<section data-markdown>
 						<script type="text/template">
 							## How does rest do all this?
-							###The main concept of `REST` is to design your application to use what are known as standard HTTP methods.
-							 ###A Method is a piece of software which performs a specified function
-							###The methods most commonly used in `REST` are
+							* The main concept of `REST` is to design your application to use what are known as standard HTTP methods.
+							 * A Method is a piece of software which performs a specified function
+							* The methods most commonly used in `REST` are
 							 * GET
 							 * POST
 							 * PUT
@@ -79,69 +79,69 @@
 					<section data-markdown>
 						<script type="text/template">
 							## By following standard practices, REST alleviates confusion
-							###HTTP, or Hypertext Transfer Protocol, is a protocol which enables servers and browers transfer digital communications.
-							###REST is the practice of designing the routes of your API or UI in a way that represents what action you intend to perform using HTTP
+							* HTTP, or Hypertext Transfer Protocol, is a protocol which enables servers and browers transfer digital communications.
+							* REST is the practice of designing the routes of your API or UI in a way that represents what action you intend to perform using HTTP
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## Routes??
-							###The most common route is `/`
-							###Think of `http://www.facebook.com/` that trailing slash is a route.
-							###A route is part of URL, or URI. It is the way that your browser knows how to submit a request to a server via HTTP.
-							###The first part, www.facebook.com, is the domain name of the server
-							###The second part, the `/`, tells your browser to GET the content provided at the base route of the server.
-							###A request is defined via the HTTP method which is used, in this case GET.
+							* The most common route is `/`
+							* Think of `http://www.facebook.com/` that trailing slash is a route.
+							* A route is part of URL, or URI. It is the way that your browser knows how to submit a request to a server via HTTP.
+							* The first part, www.facebook.com, is the domain name of the server
+							* The second part, the `/`, tells your browser to GET the content provided at the base route of the server.
+							* A request is defined via the HTTP method which is used, in this case GET.
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## Requests
-							###The HTTP methods referred to earlier are more commonly know as _CRUD_ methods
-							###It stands for Create, Read, Update, Delete
-							###Think of a request like asking the server to perform some action
-							###That action, when defined properly, should have a specific outcome
+							* The HTTP methods referred to earlier are more commonly know as _CRUD_ methods
+							* It stands for Create, Read, Update, Delete
+							* Think of a request like asking the server to perform some action
+							* That action, when defined properly, should have a specific outcome
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## How do requests and HTTP go togeher?
-							###Create - or POST, should create something new on the server
-							###Read - or GET, should request content which already exists on the server
-							###Update - or PUT, should modify an existing piece of content on the server
-							###Delete - should remove content from the server
-							###These define specific routes, to perform actions on a server
+							* Create - or POST, should create something new on the server
+							* Read - or GET, should request content which already exists on the server
+							* Update - or PUT, should modify an existing piece of content on the server
+							* Delete - should remove content from the server
+							* These define specific routes, to perform actions on a server
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## Common applications of REST
-							###When you browse to Facebook, and you post a status update, consider that a POST request
-							###When you scroll through your news feed, that is a GET request
-							###When you edit your profile, that is a PUT request
-							###When you delete a picture or post, that is a DELETE request
+							* When you browse to Facebook, and you post a status update, consider that a POST request
+							* When you scroll through your news feed, that is a GET request
+							* When you edit your profile, that is a PUT request
+							* When you delete a picture or post, that is a DELETE request
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## back to Rapid Development and Scalability
-							###HTTP enables an application to perform Inter-server Communication
-							###Think of this, like when you authorize an app on your phone to connect with your Facebook or Twitter account.
-							###That application knows how to talk to Twitter and Facebook via a common public REST api to perform numerous tasks on your behalf
-							###If an application can rely on a separate server for authentication, profile management, content curation, etc. You merely have to leverage that as part of its design
-							###This cuts down the time from inception to deployable code drastically!
+							* HTTP enables an application to perform Inter-server Communication
+							* Think of this, like when you authorize an app on your phone to connect with your Facebook or Twitter account.
+							* That application knows how to talk to Twitter and Facebook via a common public REST api to perform numerous tasks on your behalf
+							* If an application can rely on a separate server for authentication, profile management, content curation, etc. You merely have to leverage that as part of its design
+							* This cuts down the time from inception to deployable code drastically!
 						</script>
 					</section>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
 						## Consuming RESTful APIs
-						###Rest is most commonly used to design APIs
-						###An API is not like a User Interface, but rather is designed to provide raw content from a provider
-						###A few very popular APIs are
-						 ###Twitter Stream - https://stream.twitter.com/1.1/statuses/sample.json
-						 ###Facebook Graph - http://graph.facebook.com/
-						 ###Google Maps - https://www.google.com/maps/embed/v1/place
+						* Rest is most commonly used to design APIs
+						* An API is not like a User Interface, but rather is designed to provide raw content from a provider
+						* A few very popular APIs are
+						 * Twitter Stream - https://stream.twitter.com/1.1/statuses/sample.json
+						 * Facebook Graph - http://graph.facebook.com/
+						 * Google Maps - https://www.google.com/maps/embed/v1/place
 					</script>
 				</section>
 
@@ -173,19 +173,19 @@ client.get('statuses/user_timeline', params, function(error, tweets, response){
 				<section data-markdown>
 					<script type="text/template">
 						## What will this code do?
-						###First, it will send a request to twitter, using the provided keys and tokens
-						###Once Twitter authorizes my application to be sure I am who I say I am, it will return a response
-						###This response from Twitter will be in the form of JSON, and will contain every tweet which I have tweeted, as well as the metadata of each tweet
+						* First, it will send a request to twitter, using the provided keys and tokens
+						* Once Twitter authorizes my application to be sure I am who I say I am, it will return a response
+						* This response from Twitter will be in the form of JSON, and will contain every tweet which I have tweeted, as well as the metadata of each tweet
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## JSON
-						###pronounced "Jay-sawn"
-						###This stands for Javascript Object Notation
-						###JSON is a standard programming notation language used to define the attributes of some object
-						###In the case of twitter, the object being defined is a tweet
+						* pronounced "Jay-sawn"
+						* This stands for Javascript Object Notation
+						* JSON is a standard programming notation language used to define the attributes of some object
+						* In the case of twitter, the object being defined is a tweet
 					</script>
 				</section>
 
