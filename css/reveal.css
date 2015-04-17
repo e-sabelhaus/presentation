@@ -46,6 +46,10 @@ body {
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
+.reveal li {
+  font-size: 50px;
+}
+
 .reveal .slides section .fragment {
   opacity: 0;
   visibility: hidden;
