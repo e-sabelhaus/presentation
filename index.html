@@ -145,12 +145,11 @@
 					</script>
 				</section>
 
-				<section>
-					<ul>
-						<li>This is how a GET request to the Twitter Statuses API using NodeJS would look
-						<li>For simplicity sake, I use the twitter Node Package Manager (NPM) module to perform the request.
-					<ul>
-					<pre><code data-trim contenteditable>
+				<section data-markdown>
+					<script type="text/template">
+						####This is how a GET request to the Twitter Statuses API using NodeJS would look
+						####For simplicity sake, I use the twitter Node Package Manager (NPM) module to perform the request.
+						```
 var Twitter = require('twitter');
 
 var client = new Twitter({
@@ -167,7 +166,8 @@ client.get('statuses/user_timeline', params, function(error, tweets, response){
 		console.log(tweets);
 	}
 });
-					</pre></code>
+					```
+					</script>
 				</section>
 
 				<section data-markdown>
